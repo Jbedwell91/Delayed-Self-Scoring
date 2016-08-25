@@ -25,25 +25,22 @@
     <!-- Plugins -->
     <script src="../plugins/pcllab-short-answer.js"></script>
 
-    <title>pcllab-study-text-test</title>
+    <title>pcllab-short-answers-test</title>
 </head>
 <body>
 <div id="experiment_container" class="container-fluid"></div>
 </body>
 
 <script>
-
-var retrieve = {
+    var trial = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 10,
         show_progress: false,
         label: "label1"
-
-    }; 
-
+    };
     jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [retrieve],
+        timeline: [trial],
         on_finish: function () {
             jsPsych.data.displayData();
         }
