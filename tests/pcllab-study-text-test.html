@@ -32,27 +32,63 @@
 </body>
 
 <script>
-    var trial1 = {
+    var study1 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 20,
         label: "label1"
     };
 
-    var trial2 = {
+    var study2 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 30,
+        minimum_time: 1000 * 20,
         label: "label2"
     };
 
-    var trial3 = {
+    var study3 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 30,
+        minimum_time: 1000 * 20,
         label: "label3"
+    };
+
+    var study4 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 20,
+        label: "label4"
+    };
+
+    var study5 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 20,
+        label: "label5"
+    };
+
+    var study6 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 20,
+        label: "label6"
+    };
+
+    var study7 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 20,
+        label: "label7"
+    };
+
+    var study8 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 20,
+        label: "label8"
+    };
+
+    var study9 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 20,
+        label: "label9"
     };
 
     jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [trial1, trial2, trial3],
+        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9],
         on_finish: function () {
             jsPsych.data.displayData();
         }
