@@ -24,6 +24,7 @@
 
     <!-- Plugins -->
     <script src="../plugins/pcllab-study-text.js"></script>
+    <script src="../plugins/pcllab-short-answer.js"></script>
 
     <title>pcllab-study-text-test</title>
 </head>
@@ -34,61 +35,69 @@
 <script>
     var study1 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label1"
     };
 
     var study2 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label2"
     };
 
     var study3 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label3"
     };
 
     var study4 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label4"
     };
 
     var study5 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label5"
     };
 
     var study6 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label6"
     };
 
     var study7 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label7"
     };
 
     var study8 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label8"
     };
 
     var study9 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 20,
+        minimum_time: 1000 * 15,
         label: "label9"
     };
 
+    var retrieve = {
+        type: 'pcllab-short-answer',
+        minimum_time: 1000 * 15,
+        show_progress: false,
+        label: "label1"
+
+    }; 
+
     jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9],
+        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9, retrieve],
         on_finish: function () {
             jsPsych.data.displayData();
         }
