@@ -25,7 +25,10 @@
     <!-- Plugins -->
     <script src="../plugins/pcllab-study-text.js"></script>
     <script src="../plugins/pcllab-short-answer.js"></script>
+    <script src="../plugins/pcllab-demographics.js"></script>
+    <script src="../plugins/pcllab-instructions.js"></script>
     <script src="../plugins/jspsych-button-response.js"></script>
+
 
     <title>pcllab-study-text-test</title>
 </head>
@@ -38,6 +41,22 @@
         type: 'pcllab-study-text',
         minimum_time: 1000 * 15,
         label: "label1"
+    };
+
+    var instructions1 = {
+        type: 'pcllab-instructions',
+        label: 'General'
+
+    };
+
+    var instructions2 = {
+        type: 'pcllab-instructions',
+        label: 'Study'
+    };
+
+    var instructions3 = {
+        type: 'pcllab-instructions',
+        label: 'Recall'
     };
 
     var study2 = {
@@ -151,6 +170,10 @@
         label: "label9"
     }; 
 
+    var demographics = {
+        type: "pcllab-demographics"
+    };
+
     var evaluate= {
         type: "button-response",
         prompt: "Was your response fully correct, partially correct, or incorrect?",
@@ -159,7 +182,7 @@
 
     jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9, retrieve1, evaluate, retrieve2, evaluate, retrieve3, evaluate, retrieve4, evaluate, retrieve5, evaluate, retrieve6, evaluate, retrieve7, evaluate, retrieve8, evaluate, retrieve9, evaluate],
+        timeline: [instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, evaluate, retrieve2, evaluate, retrieve3, evaluate, retrieve4, evaluate, retrieve5, evaluate, retrieve6, evaluate, retrieve7, evaluate, retrieve8, evaluate, retrieve9, evaluate, demographics],
         on_finish: function () {
             jsPsych.data.displayData();
         }
