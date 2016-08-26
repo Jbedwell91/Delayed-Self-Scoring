@@ -25,6 +25,7 @@
     <!-- Plugins -->
     <script src="../plugins/pcllab-study-text.js"></script>
     <script src="../plugins/pcllab-short-answer.js"></script>
+    <script src="../plugins/jspsych-button-response.js"></script>
 
     <title>pcllab-study-text-test</title>
 </head>
@@ -150,9 +151,15 @@
         label: "label9"
     }; 
 
+    var evaluate= {
+        type: "button-response",
+        prompt: "Was your response fully correct, partially correct, or incorrect?",
+        choices: ["Fully Correct", "Partially Correct", "Incorrect"]
+    };
+
     jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9, retrieve1, retrieve2, retrieve3, retrieve4, retrieve5, retrieve6, retrieve7, retrieve8, retrieve9],
+        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9, retrieve1, evaluate, retrieve2, evaluate, retrieve3, evaluate, retrieve4, evaluate, retrieve5, evaluate, retrieve6, evaluate, retrieve7, evaluate, retrieve8, evaluate, retrieve9, evaluate],
         on_finish: function () {
             jsPsych.data.displayData();
         }
