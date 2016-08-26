@@ -1,10 +1,10 @@
 {
     "label1": [
-      {"question" :"Which parts of the Earth receive the most heat from the Sun?", "type" : "V"},
-      {"question" :"When is hurricane season?", "type" : "V"},
-      {"question" :"Unequal heating to the Earth causes what type of air movement?", "type" : "V"},
-      {"question" :"Water condenses on ________ to form clouds. Fill in the blank.", "type" : "V"},
-      {"question" :"What causes wind?", "type" : "V"}
+      {"question" :"What is the function of the deltoid muscle?", "type" : "V"},
+      {"question" :"What is the innervation of the deltoid muscle?", "type" : "V"},
+      {"question" :"What is the location of the deltoid muscle?", "type" : "V"},
+      {"question" :"What is the function of the digital flexor muscles?", "type" : "V"},
+      {"question" :"What is the innervation of the digital flexor muscles?", "type" : "V"}
       ],
     
     "label2":[
