@@ -1,27 +1,37 @@
 {
     "label1": [
-      {"question" :"What is the function of the deltoid muscle?", "type" : "V"},
-      {"question" :"What is the innervation of the deltoid muscle?", "type" : "V"},
-      {"question" :"What is the location of the deltoid muscle?", "type" : "V"},
-      {"question" :"What is the function of the digital flexor muscles?", "type" : "V"},
-      {"question" :"What is the innervation of the digital flexor muscles?", "type" : "V"},
-      {"question" :"What is the location of the digital flexor muscles?", "type" : "V"},
-      {"question" :"What is the function of the triceps muscle?", "type" : "V"},
-      {"question" :"What is the innervation of the triceps muscle?", "type" : "V"},
-      {"question" :"What is the location of the triceps muscle?", "type" : "V"}
+      {"question" :"What is the function of the deltoid muscle?", "type" : "V"}
       ],
     
     "label2":[
-      {"question" :"The lungs are the main organs of which system in the body?", "type" : "V"},
-      {"question" :"While you are breathing, our lungs inflate or puff up. What is this process?", "type" : "V"},
-      {"question" :"Which type of cells release sticky mucus in your nose and airway?", "type" : "V"},
-      {"question" :"What tiny, hair-like structures cover the inside of the airway?", "type" : "V"},
-      {"question" :"The process that occurs when there is less space in the lungs is what?", "type" : "V"},
-      {"question" :"What are the muscles that do the work of inhaling and exhaling?", "type" : "V"},
-      {"question" :"Why do we cough?", "type" : "V"},
-      {"question" :"Why is it important to have nose hairs?", "type" : "I"},
-      {"question" :"When a person inhales cigarette smoke, they damage their cilia. Why might this make it harder to breathe?", "type" : "I"},
-      {"question" :"Polio is a disease that can paralyse, or stop the movement of, the muscles in the chest. If someone has polio why would they not be able to breathe on their own?", "type" : "A"},
-      {"question" :"Imagine you are in an environment with dust in the air. Describe how your respiratory system would react.", "type" : "A"}
+      {"question" :"What is the innervation of the deltoid muscle?", "type" : "V"}
+      ],
+
+     "label3":[
+      {"question" :"What is the location of the deltoid muscle?", "type" : "V"}
+      ],
+
+      "label4":[
+      {"question" :"What is the function of the digital flexor muscles?", "type" : "V"}
+      ],
+
+       "label5":[
+      {"question" :"What is the innervation of the digital flexor muscles?", "type" : "V"}
+      ],
+
+        "label6":[
+      {"question" :"What is the location of the digital flexor muscles?", "type" : "V"}
+      ],
+
+         "label7":[
+      {"question" :"What is the function of the triceps muscle?", "type" : "V"}
+      ],
+
+          "label8":[
+      {"question" :"What is the innervation of the triceps muscle?", "type" : "V"}
+      ],
+
+           "label9":[
+      {"question" :"What is the location of the triceps muscle?", "type" : "V"}
       ]
 }
