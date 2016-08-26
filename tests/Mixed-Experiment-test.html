@@ -182,7 +182,7 @@
 
     jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, evaluate, retrieve2, evaluate, retrieve3, evaluate, retrieve4, evaluate, retrieve5, evaluate, retrieve6, evaluate, retrieve7, evaluate, retrieve8, evaluate, retrieve9, evaluate, demographics],
+        timeline: [study1, study2, study3, study4, study5, study6, study7, study8, study9, retrieve1, evaluate, retrieve2, evaluate, retrieve3, evaluate, retrieve4, evaluate, retrieve5, evaluate, retrieve6, evaluate, retrieve7, evaluate, retrieve8, evaluate, retrieve9, evaluate, demographics],
         on_finish: function () {
             jsPsych.data.displayData();
         }
