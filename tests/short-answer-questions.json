@@ -1,37 +1,37 @@
 {
     "label1": [
-      {"question" :"What is the function of the deltoid muscle?", "type" : "V"}
+      {"question" :"What is the <b>function</b> of the <b>deltoid muscle</b>?", "type" : "V"}
       ],
     
     "label2":[
-      {"question" :"What is the innervation of the deltoid muscle?", "type" : "V"}
+      {"question" :"What is the <b>innervation</b> of the <b>deltoid muscle</b>?", "type" : "V"}
       ],
 
      "label3":[
-      {"question" :"What is the location of the deltoid muscle?", "type" : "V"}
+      {"question" :"What is the <b>location</b> of the <b>deltoid muscle</b>?", "type" : "V"}
       ],
 
       "label4":[
-      {"question" :"What is the function of the digital flexor muscles?", "type" : "V"}
+      {"question" :"What is the <b>function</b> of the <b>digital flexor muscles</b>?", "type" : "V"}
       ],
 
        "label5":[
-      {"question" :"What is the innervation of the digital flexor muscles?", "type" : "V"}
+      {"question" :"What is the <b>innervation</b> of the <b>digital flexor muscles</b>?", "type" : "V"}
       ],
 
         "label6":[
-      {"question" :"What is the location of the digital flexor muscles?", "type" : "V"}
+      {"question" :"What is the <b>location</b> of the <b>digital flexor muscles?</b>", "type" : "V"}
       ],
 
          "label7":[
-      {"question" :"What is the function of the triceps muscle?", "type" : "V"}
+      {"question" :"What is the <b>function</b> of the <b>triceps muscle</b>?", "type" : "V"}
       ],
 
           "label8":[
-      {"question" :"What is the innervation of the triceps muscle?", "type" : "V"}
+      {"question" :"What is the <b>innervation</b> of the <b>triceps muscle</b>?", "type" : "V"}
       ],
 
            "label9":[
-      {"question" :"What is the location of the triceps muscle?", "type" : "V"}
+      {"question" :"What is the <b>location</b> of the <b>triceps muscle</b>?", "type" : "V"}
       ]
 }
