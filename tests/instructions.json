@@ -1,13 +1,9 @@
 {
-  "General": [{
+  "General": {
     "title": "General Instructions",
     "text": "<p>Throughout the experiment, you will see a progress bar at the top of the screen to show you which phase of the experiment you are in.<br><br>In addition, you will see progress timers at the bottom of the screens that will show you how much time you have left in each phase before you can advance to the next phase.</p><p>At the end of the experiment, there will be a few final questions for you to answer. You will then receive your code to enter into MTurk.</p><p>Please do not write anything down, do not click the back button on your browser, and do not open other tabs or browsers during the experiment.</p><p>Thank you for your participation! Click 'Continue' when you are ready to start the experiment.</p>"
   },
-    {
-      "title": "Second General Instructions",
-      "text": "<br>Throughout the experiment, you will see a progress bar at the top of the screen to show you which phase of the experiment you are in.<br><br>In addition, you will see progress timers at the bottom of the screens that will show you how much time you have left in each phase before you can advance to the next phase.<br><br>At the end of the experiment, there will be a few final questions for you to answer. You will then receive your code to enter into MTurk.<br><br>Please do not write anything down, do not click the back button on your browser, and do not open other tabs or browsers during the experiment.<br><br>Thank you for your participation! Click 'Continue' when you are ready to start the experiment."
-    }],
-
+   
   "Study" : {
     "title": "Study Instructions",
     "text": "<br>In the first part of this experiment, you will see a text on the screen, and your job will be to study the text so that you can remember it later. (Note that you might have to scroll down the screen to see the whole text.) You will have to study the text for a minimum of 2 minutes. When 2 minutes is over, you may advance by pressing the 'Continue' button when you are ready.<br><br>Click the button to begin the study phase. <br>In the next part of the experiment, you will have a chance to study the text a second time. You will see the text on the screen, and your job will be to study the text so that you can remember it later.<br><br>You will have to study the text for a minimum of 2 minutes. When 2 minutes is over, you may advance by pressing the 'Continue' button when you are ready.<br><br>Click 'Continue' when you are ready to begin."
