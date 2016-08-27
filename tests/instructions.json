@@ -2,7 +2,8 @@
 {
   "General": {
     "title": "General Instructions",
-    "text": "<p>Throughout the experiment, you will see a progress bar at the top of the screen to show you which phase of the experiment you are in.<br><br>In addition, you will see progress timers at the bottom of the screens that will show you how much time you have left in each phase before you can advance to the next phase.</p><p>At the end of the experiment, there will be a few final questions for you to answer. You will then receive your code to enter into MTurk.</p><p>Please do not write anything down, do not click the back button on your browser, and do not open other tabs or browsers during the experiment.</p><p>Thank you for your participation! Click 'Continue' when you are ready to start the experiment.</p>"
+    "text": "Welcome! For this experiment, you will be asked to study a series of nine key terms and their definitions. After studying all of the items, you will be prompted to recall each definition by typing it into a short answer box. You will then indicate to what degree you think your answer is correct by marking it as 'fully correct,' 'partially correct,' or 'incorrect'. At the end of the experiment, there will be a few final questions for you to answer. Please do not write anything down, do not click the back button on your browser, and do not open other tabs or browsers during the experiment. Thank you for your participation! Click 'Continue' when you are ready to start the experiment."
+
   },
 
   "Study" : {
