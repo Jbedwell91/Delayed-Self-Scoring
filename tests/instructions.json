@@ -7,7 +7,8 @@
    
   "Study" : {
     "title": "Study Instructions",
-    "text": "<br>In the first part of this experiment, you will see a text on the screen, and your job will be to study the text so that you can remember it later. (Note that you might have to scroll down the screen to see the whole text.) You will have to study the text for a minimum of 2 minutes. When 2 minutes is over, you may advance by pressing the 'Continue' button when you are ready.<br><br>Click the button to begin the study phase. <br>In the next part of the experiment, you will have a chance to study the text a second time. You will see the text on the screen, and your job will be to study the text so that you can remember it later.<br><br>You will have to study the text for a minimum of 2 minutes. When 2 minutes is over, you may advance by pressing the 'Continue' button when you are ready.<br><br>Click 'Continue' when you are ready to begin."
+    "text": "In the first part of this experiment, you will see a key term on the screen (e.g. deltoid muscle- function:) along with its definition, and your job will be to study the key term and definition so that you can remember them later. You will have to study each term and definition for a minimum of 15 seconds. When 15 seconds is over, you may advance by pressing the 'Continue' button. Click the button to begin the study phase." 
+
   },
 
   "Recall" : {
