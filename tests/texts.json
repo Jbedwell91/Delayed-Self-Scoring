@@ -2,7 +2,7 @@
 
   "label1": {
     "title": "<font size= '20'>The Deltoid Muscle- Function: </font size= '20'>", 
-    "text": "<font size = '6'>Functions mainly to move the upper arm away from the body at the shoulder </font size = '6'>"
+    "text": "<font size = '6'>Functions to move the upper arm away from the body </font size = '6'>"
   },
   "label2": {
     "title": "<font size= 20>The Deltoid Muscle- Innervation:</font size= 20>",
@@ -10,11 +10,11 @@
   },
   "label3": {
     "title": "<font size= 20>The Deltoid Muscle- Location:</font size= 20>",
-    "text": "<font size = 6>Resides on the side of the upper arm at the shoulder and connects the scapula to the humerus</font size = 6>"
+    "text": "<font size = 6>Resides on the side of the upper arm at the shoulder</font size = 6>"
   },
   "label4": {
     "title": "<font size= 20>The Digital Flexor Muscles- Function:</font size= 20>",
-    "text": "<font size = 6>Function together to flex the fingers causing the formation of a fist</font size = 6>"
+    "text": "<font size = 6>Function together to flex the fingers</font size = 6>"
   },
   "label5": {
     "title": "<font size= 20>The Digital Flexor Muscles- Innervation:</font size= 20>",
@@ -22,7 +22,7 @@
   },
   "label6": {
     "title": "<font size= 20>The Digital Flexor Muscles- Location:</font size= 20>",
-    "text": "<font size = 6>Reside on the front of the forearm when the palm is facing forward and connect the arms to the fingers</font size = 6>"
+    "text": "<font size = 6>Reside on the front of the forearm when the palm is facing forward</font size = 6>"
   },
   "label7": {
     "title": "<font size= 20>The Triceps Muscle- Function:</font size= 20>",
@@ -34,7 +34,7 @@
   },
   "label9": {
     "title": "<font size= 20>The Triceps Muscle- Location:</font size= 20>",
-    "text": "<font size = 6>Resides on the back of the arm and connects the upper arm to a bone of the lower arm</font size = 6>"
+    "text": "<font size = 6>Resides on the back of the arm/font size = 6>"
   }
 }
 
