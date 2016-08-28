@@ -62,9 +62,7 @@ jsPsych.plugins["pcllab-study-text"] = (function () {
                 timeSpent -= 100;
                 if (timeSpent <= 0) {
                     clearInterval(timerInterval);
-                    $(".progress").css('display', 'none');
-                    $(".btn").css('display', 'block');
-                    return;
+                    
                 }
 
                 var newValue = Math.round((timeSpent / trial.minimum_time) * 100);
