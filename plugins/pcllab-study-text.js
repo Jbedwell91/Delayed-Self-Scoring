@@ -46,9 +46,6 @@ jsPsych.plugins["pcllab-study-text"] = (function () {
 
             display_element.append("<h2>" + title + "</h2><br>");
             display_element.append("<div>" + jsPsych.userInfo.texts[trial.label].text + "</div><br>");
-            display_element.append('<div class="progress" style="margin-top: 15px; height: 26px;">' +
-                '<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100" style="width: 100%">' +
-                '</div>');
             display_element.append('<button class="btn btn-primary btn-lg pcllab-button-center" style="display: none">Continue</button>');
             $(".btn").click(function () {
                 display_element.html("");
