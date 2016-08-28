@@ -68,9 +68,7 @@ jsPsych.plugins["pcllab-study-text"] = (function () {
                 }
 
                 var newValue = Math.round((timeSpent / trial.minimum_time) * 100);
-                $("div.progress-bar").css('width', newValue + '%');
-                $("div.progress-bar").prop('aria-valuenow', newValue);
-            }, 100);
+                
 
 
         }
