@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/jspsych.css">
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Then jsPsych -->
+    <script src="../jspsych.js"></script>
+
+    <!-- Plugins -->
+    <script src="../plugins/pcllab-study-text.js"></script>
+    <script src="../plugins/pcllab-short-answer.js"></script>
+    <script src="../plugins/pcllab-demographics.js"></script>
+    <script src="../plugins/pcllab-instructions.js"></script>
+    <script src="../plugins/jspsych-survey-multi-choice.js"></script>
+
+
+    <title>pcllab-study-text-test</title>
+</head>
+<body>
+<div id="experiment_container" class="container-fluid"></div>
+</body>
+
+<script>
+
+ var retrieve1 = {
+        type: 'pcllab-short-answer',
+        minimum_time: 1000 * 10,
+        show_progress: false,
+        label: "label1"
+    }; 
+
+ var page_1_questions = ["Was you answer fully correct, partially correct, or incorrect?"];
+
+
+ var page_1_options = ["Fully Correct", "Partially Correct", "Incorrect"];
+
+  var grade_deltoid1 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p>"
+      };
+
+
+       jsPsych.init({
+        display_element: $("div#experiment_container"),
+        timeline: [retrieve1, grade_deltoid1],
+          on_finish: function () {
+            jsPsych.data.displayData();
+        }
+    })
+</script>
+</html>
+
+       
