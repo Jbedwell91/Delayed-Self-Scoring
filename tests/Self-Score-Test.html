@@ -43,11 +43,13 @@
         minimum_time: 1000 * 10,
         show_progress: false,
         label: "label1",
+        on_finish: function(data) {
+          console.log(JSON.stringify(data));
+  }
 
     }; 
 
 
-  var your_answer= data["short_answer_response"]
   var page_1_questions = ["Was you answer fully correct, partially correct, or incorrect?"];
 
 
@@ -57,8 +59,7 @@
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: function() {
-      return "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p> <p> <b> Your Answer:</b> </p>" + your_answer
+      preamble: "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p> <p> <b> Your Answer:</b> </p>" 
     }
       };
 
