@@ -73,7 +73,7 @@ function getSubjectData() {
 
        jsPsych.init({
         display_element: $("div#experiment_container"),
-        timeline: [retrieve1, grade_deltoid1],
+        timeline: [retrieve1, multi_choice_block],
           on_finish: function () {
             jsPsych.data.displayData();
         }
