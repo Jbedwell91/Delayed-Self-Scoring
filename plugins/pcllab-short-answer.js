@@ -72,12 +72,20 @@ jsPsych.plugins["pcllab-short-answer"] = (function () {
             display_element.append('<button class="btn btn-primary btn-lg pcllab-button-center" style="display: none">Continue</button>')
             $(".btn").click(function () {
 
-                var data = {};
+    var question_data = {};
+         $("div.pcllab-short-answer").each(function(index) {
+            var id = "Q" + index;
+            var val = $(this).children('textarea').val();
+            var obje = {};
+            obje[id] = val;
+            $.extend(question_data, obje);
+      });
 
-                data["short_answer_time"] = (new Date()).getTime() - startTime;
-                data["short_answer_label"] = trial.label;
-                data["short_answer_response"] = $("#response_area").val();
-                data["short_answer_question"] = question.question;
+      // save data
+      var trialdata = {
+        "rt": response_time,
+        "responses": JSON.stringify(question_data)
+      };
 
                 jsPsych.data.write(data);
 
