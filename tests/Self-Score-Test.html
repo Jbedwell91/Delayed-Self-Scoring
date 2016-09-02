@@ -62,11 +62,22 @@
       } 
     };
 
+    var test = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p> <p><b>Your Answer:</b></p>" + subject_data
+      } 
+    };
+
+
     function getSubjectData() {
 
     var trials = jsPsych.data.getLastTrialData();
 
-    return trials.short_answer_time
+    return trials.responses
   }
   
 var subject_data = getSubjectData();
