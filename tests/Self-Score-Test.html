@@ -50,15 +50,16 @@
   var page_1_questions = ["Was you answer fully correct, partially correct, or incorrect?"];
 
 
-  var page_1_options = ["Fully Correct", "Partially Correct", "Incorrect"];
+  var page_1_options = ["<font size =4> Fully Correct</font size =4", "<font size =4> Partially Correct</font size =4>", "<font size =4> Incorrect</font size =4>"];
 
    var multi_choice_block = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
+      horizontal: true,
       preamble: function() {
       var subject_data = getSubjectData();
-      return "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p><p><b>Your Answer:</b></p>" +  subject_data
+      return "<font size =4><p><center>Deltoid Muscle -- Function </center></p> <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
       }
     }; 
 
@@ -66,7 +67,7 @@ function getSubjectData() {
 
     var trials = jsPsych.data.getLastTrialData();
 
-    return trials.questions
+    return trials.short_answer_response
   }
   
 

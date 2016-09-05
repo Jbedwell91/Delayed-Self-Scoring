@@ -46,7 +46,7 @@
     var page_1_questions = ["Was you answer fully correct, partially correct, or incorrect?"];
 
 
-    var page_1_options = ["Fully Correct", "Partially Correct", "Incorrect"];
+    var page_1_options = ["<font size =4> Fully Correct</font size =4", "<font size =4> Partially Correct</font size =4>", "<font size =4> Incorrect</font size =4>"];
 
     var instructions1 = {
         type: 'pcllab-instructions',
@@ -183,56 +183,90 @@
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Deltoid Muscle -- Function </center></p> <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
       var grade_deltoid2 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Deltoid Muscle- Innervation <p> <b>Correct Answer:</b> Is stimulated by the axillary nerve </p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Deltoid Muscle -- Innervation </center></p> <p> <b>Correct Answer:</b> Is stimulated by the axillary nerve</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_deltoid3 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Deltoid Muscle- Location <p> <b>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Deltoid Muscle -- Location </center></p> <p> <b>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_digital1 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Digital Flexor Muscles- Function <p> <b>Correct Answer:</b> Function together to flex the fingers</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Digital Flexor Muscles -- Function </center></p> <p> <b>Correct Answer:</b> Function together to flex the fingers</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_digital2 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Digital Flexor Muscles- Innervation <p> <b>Correct Answer:</b> Are stimulated by the median and ulnar nerves</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Digital Flexor Muscles -- Innervation </center> </p><p> <b>Correct Answer:</b> Are stimulated by the median and ulnar nerves</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_digital3 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Digital Flexor Muscles- Location <p> <b>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Digital Flexor Muscles -- Location </center></p> <p> <b>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_triceps1 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Triceps Muscle- Function <p> <b>Correct Answer:</b> Functions to extend the lower arm at the elbow</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Triceps Muscle -- Function </center></p> <p> <b>Correct Answer:</b> Functions to extend the lower arm at the elbow</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_triceps2 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Triceps Muscle- Innervation <p> <b>Correct Answer:</b> Is stimulated by the radial nerve</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Triceps Muscle -- Innervation </center></p> <p> <b>Correct Answer:</b> Is stimulated by the radial nerve</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
         var grade_triceps3 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Triceps Muscle- Location <p> <b>Correct Answer:</b> Resides on the back of the arm</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =4><p><center>Triceps Muscle -- Location </center></p> <p> <b>Correct Answer:</b> Resides on the back of the arm</p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =4>"
+      }
       };
+
+      function getSubjectData() {
+
+    var trials = jsPsych.data.getLastTrialData();
+
+    return trials.short_answer_response
+  }
 
     jsPsych.init({
         display_element: $("div#experiment_container"),
