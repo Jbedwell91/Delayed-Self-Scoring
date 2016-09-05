@@ -40,7 +40,7 @@
 
   var retrieve1 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label1",
          
@@ -66,17 +66,17 @@ function getSubjectData() {
 
     var trials = jsPsych.data.getLastTrialData();
 
-    return trials.short_answer_response
+    return trials.questions
   }
   
-
 
        jsPsych.init({
         display_element: $("div#experiment_container"),
         timeline: [retrieve1, multi_choice_block],
           on_finish: function () {
             jsPsych.data.displayData();
-        }
+        }  
+        
     })
 </script>
 </html>
