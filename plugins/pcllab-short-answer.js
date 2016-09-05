@@ -79,19 +79,12 @@ jsPsych.plugins["pcllab-short-answer"] = (function () {
                 data["short_answer_response"] = $("#response_area").val();
                 data["short_answer_question"] = question.question;
 
-                jsPsych.data.write(data);
-
-              var trial_data = {
-                "response": $("#response_area").val()
-                
-            };
-
 
                 index++;
 
                 if (index == questions.length) {
                     display_element.html("");
-                    jsPsych.finishTrial();
+                    jsPsych.finishTrial(data);
                 } else {
                     showQuestion(questions[index]);
                 }
