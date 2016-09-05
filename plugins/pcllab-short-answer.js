@@ -83,6 +83,7 @@ jsPsych.plugins["pcllab-short-answer"] = (function () {
 
               var trialdata = {
                 "responses": JSON.stringify(data)
+                "response": data["short_answer_response"] 
             };
 
 
