@@ -85,8 +85,6 @@ jsPsych.plugins["pcllab-short-answer"] = (function () {
             };
 
 
-                jsPsych.data.write(data);
-
                 index++;
 
                 if (index == questions.length) {
