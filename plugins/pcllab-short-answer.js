@@ -79,8 +79,9 @@ jsPsych.plugins["pcllab-short-answer"] = (function () {
                 data["short_answer_response"] = $("#response_area").val();
                 data["short_answer_question"] = question.question;
 
+                jsPsych.data.write(data);
+
               var trialdata = {
-                "rt": response_time,
                 "responses": JSON.stringify(data)
             };
 
