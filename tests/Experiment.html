@@ -43,16 +43,16 @@
     var workerId = urlVars.workerId;
     var condition = urlVars.condition;
 
-    var study1 = {
+     var study1 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label1"
     };
 
-    var page_1_questions = ["Was you answer fully correct, partially correct, or incorrect?"];
+    var page_1_questions = ["<font size =5>Was you answer fully correct, partially correct, or incorrect?</font size =5>"];
 
 
-    var page_1_options = ["Fully Correct", "Partially Correct", "Incorrect"];
+    var page_1_options = ["<font size =4> Fully Correct</font size =4", "<font size =4> Partially Correct</font size =4>", "<font size =4> Incorrect</font size =4>"];
 
     var instructions1 = {
         type: 'pcllab-instructions',
@@ -72,111 +72,111 @@
 
     var study2 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label2"
     };
 
     var study3 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label3"
     };
 
     var study4 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label4"
     };
 
     var study5 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label5"
     };
 
     var study6 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label6"
     };
 
     var study7 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label7"
     };
 
     var study8 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label8"
     };
 
     var study9 = {
         type: 'pcllab-study-text',
-        minimum_time: 1000 * 15,
+        minimum_time: 1000 * 1,
         label: "label9"
     };
 
     var retrieve1 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label1"
     }; 
 
      var retrieve2 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label2"
     }; 
 
      var retrieve3 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label3"
     }; 
 
      var retrieve4 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label4"
     }; 
 
      var retrieve5 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label5"
     }; 
 
      var retrieve6 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label6"
     }; 
 
      var retrieve7 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label7"
     }; 
 
      var retrieve8 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label8"
     }; 
 
      var retrieve9 = {
         type: 'pcllab-short-answer',
-        minimum_time: 1000 * 10,
+        minimum_time: 1000 * 1,
         show_progress: false,
         label: "label9"
     }; 
@@ -189,68 +189,247 @@
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Deltoid Muscle- Function <p> <b>Correct Answer:</b> Functions to move the upper arm away from the body</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Deltoid Muscle -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Functions to move the upper arm away from the body</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
       var grade_deltoid2 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Deltoid Muscle- Innervation <p> <b>Correct Answer:</b> Is stimulated by the axillary nerve </p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Deltoid Muscle -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Is stimulated by the axillary nerve</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_deltoid3 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Deltoid Muscle- Location <p> <b>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Deltoid Muscle -- Location </center></p> <p><b><font size =5>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_digital1 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Digital Flexor Muscles- Function <p> <b>Correct Answer:</b> Function together to flex the fingers</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Function together to flex the fingers</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_digital2 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Digital Flexor Muscles- Innervation <p> <b>Correct Answer:</b> Are stimulated by the median and ulnar nerves</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Are stimulated by the median and ulnar nerves</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_digital3 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Digital Flexor Muscles- Location <p> <b>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Location </center></p><p><b><font size =5>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_triceps1 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Triceps Muscle- Function <p> <b>Correct Answer:</b> Functions to extend the lower arm at the elbow</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Triceps Muscle -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Functions to extend the lower arm at the elbow</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_triceps2 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Triceps Muscle- Innervation <p> <b>Correct Answer:</b> Is stimulated by the radial nerve</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Triceps Muscle -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Is stimulated by the radial nerve</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
         var grade_triceps3 = {
       type: 'survey-multi-choice',
       questions: page_1_questions,
       options: [page_1_options], 
-      preamble: "Triceps Muscle- Location <p> <b>Correct Answer:</b> Resides on the back of the arm</p>"
+      preamble: function() {
+      var subject_data = getSubjectData();
+      return "<font size =5><p><center>Triceps Muscle -- Location </center></p> <p> <b><font size =5>Correct Answer:</b> Resides on the back of the arm</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
       };
+
+      function getSubjectData() {
+
+    var trials = jsPsych.data.getLastTrialData();
+
+    return trials.short_answer_response
+  }
+
+  var grade_deltoid11 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData1();
+      return "<font size =5><p><center>Deltoid Muscle -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Functions to move the upper arm away from the body</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+      var grade_deltoid21 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData2();
+      return "<font size =5><p><center>Deltoid Muscle -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Is stimulated by the axillary nerve</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_deltoid31 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData3();
+      return "<font size =5><p><center>Deltoid Muscle -- Location </center></p> <p><b><font size =5>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_digital11 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData4();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Function together to flex the fingers</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_digital21 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData5();
+       return "<font size =5><p><center>Digital Flexor Muscles -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Are stimulated by the median and ulnar nerves</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_digital31 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData6();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Location </center></p><p><b><font size =5>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_triceps11 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData7();
+      return "<font size =5><p><center>Triceps Muscle -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Functions to extend the lower arm at the elbow</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_triceps21 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData8();
+      return "<font size =5><p><center>Triceps Muscle -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Is stimulated by the radial nerve</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade_triceps31 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData9();
+      return "<font size =5><p><center>Triceps Muscle -- Location </center></p> <p> <b><font size =5>Correct Answer:</b> Resides on the back of the arm</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+
+      function getSubjectData1() {
+
+    var trials1 = jsPsych.data.getDataByTrialIndex(13);
+
+    return trials1.short_answer_response
+  }
+
+     function getSubjectData2() {
+
+    var trials2 = jsPsych.data.getDataByTrialIndex(14);
+
+    return trials2.short_answer_response
+  }
+
+     function getSubjectData3() {
+
+    var trials3 = jsPsych.data.getDataByTrialIndex(15);
+
+    return trials3.short_answer_response
+  }
+
+     function getSubjectData4() {
+
+    var trials4 = jsPsych.data.getDataByTrialIndex(16);
+
+    return trials4.short_answer_response
+  }
+
+     function getSubjectData5() {
+
+    var trials5 = jsPsych.data.getDataByTrialIndex(17);
+
+    return trials5.short_answer_response
+  }
+
+     function getSubjectData6() {
+
+    var trials6 = jsPsych.data.getDataByTrialIndex(18);
+
+    return trials6.short_answer_response
+  }
+
+     function getSubjectData7() {
+
+    var trials7 = jsPsych.data.getDataByTrialIndex(19);
+
+    return trials7.short_answer_response
+  }
+
+     function getSubjectData8() {
+
+    var trials8 = jsPsych.data.getDataByTrialIndex(20);
+
+    return trials8.short_answer_response
+  }
+
+     function getSubjectData9() {
+
+    var trials9 = jsPsych.data.getDataByTrialIndex(21);
+
+    return trials9.short_answer_response
+  }
 
       //Mixed condition
 
        if (condition == '1') {
 
-      timeline.push(instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, grade_deltoid1, retrieve2, grade_deltoid2, retrieve3, grade_deltoid3, retrieve4, grade_digital1, retrieve5, grade_digital2, retrieve6, grade_digital3, retrieve7, grade_triceps1, retrieve8, grade_triceps2, retrieve9, grade_triceps3, demographics);
+      timeline.push(demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, grade_deltoid1, retrieve2, grade_deltoid2, retrieve3, grade_deltoid3, retrieve4, grade_digital1, retrieve5, grade_digital2, retrieve6, grade_digital3, retrieve7, grade_triceps1, retrieve8, grade_triceps2, retrieve9, grade_triceps3,);
 
       //Blocked Condition
 
         } else if (condition == '2') {
 
-        timeline.push(instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, retrieve2, retrieve3, retrieve4, retrieve5, retrieve6, retrieve7, retrieve8, retrieve9, grade_deltoid1, grade_deltoid2, grade_deltoid3, grade_digital1, grade_digital2, grade_digital3, grade_triceps1, grade_triceps2, grade_triceps3, demographics);
+        timeline.push(demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, retrieve2, retrieve3, retrieve4, retrieve5, retrieve6, retrieve7, retrieve8, retrieve9, grade_deltoid11, grade_deltoid21, grade_deltoid31, grade_digital11, grade_digital21, grade_digital31, grade_triceps11, grade_triceps21, grade_triceps31,);
         }
 
     jsPsych.init({
