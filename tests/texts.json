@@ -1,0 +1,41 @@
+{
+
+  "label1": {
+    "title": "<font size= 5><center>Deltoid Muscle -- Function</center> </font size= 5>", 
+    "text": "<font size = 5><center>Functions to move the upper arm away from the body</center></font size = 5>"
+  },
+  "label2": {
+    "title": "<font size= 5><center>Deltoid Muscle -- Innervation</center></font size= 5>",
+    "text": "<font size = 5><center>Is stimulated by the axillary nerve</center></font size = 5>"
+  },
+  "label3": {
+    "title": "<font size= 5><center>Deltoid Muscle -- Location</center></font size= 5>",
+    "text": "<font size = 5><center>Resides on the side of the upper arm at the shoulder</center></font size = 5>"
+  },
+  "label4": {
+    "title": "<font size= 5><center>Digital Flexor Muscles -- Function</center></font size= 5>",
+    "text": "<font size = 5><center>Function together to flex the fingers</center></font size = 5>"
+  },
+  "label5": {
+    "title": "<font size= 5><center>Digital Flexor Muscles -- Innervation</center></font size= 5>",
+    "text": "<font size = 5><center>Are stimulated by the median and ulnar nerves</center></font size = 5>"
+  },
+  "label6": {
+    "title": "<font size= 5><center>Digital Flexor Muscles -- Location</center></font size= 5>",
+    "text": "<font size = 5><center>Reside on the front of the forearm when the palm is facing forward</center></font size = 5>"
+  },
+  "label7": {
+    "title": "<font size= 5><center>Triceps Muscle -- Function</center></font size= 5>",
+    "text": "<font size = 5><center>Functions to extend the lower arm at the elbow</center></font size = 5>"
+  },
+  "label8": {
+    "title": "<font size= 5><center>Triceps Muscle -- Innervation</center></font size= 5>",
+    "text": "<font size = 5><center>Is stimulated by the radial nerve</center></font size = 5>"
+  },
+  "label9": {
+    "title": "<font size= 5><center>Triceps Muscle -- Location</center></font size= 5>",
+    "text": "<font size = 5><center>Resides on the back of the arm</center></font size = 5>"
+  }
+}
+
+  
