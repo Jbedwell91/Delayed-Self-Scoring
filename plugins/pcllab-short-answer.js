@@ -55,7 +55,7 @@ jsPsych.plugins["pcllab-short-answer"] = (function () {
 
         function showQuestion(question) {
             var startTime = (new Date()).getTime();
-            display_element.html("<h2 style='text-align: center;'>Short Answer</h2><br><br>");
+           
 
             display_element.append("<h4>" + question.question + "</h4><br><br>");
 
