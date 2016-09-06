@@ -1,37 +1,37 @@
 {
     "label1": [
-      {"question" :"What is the <b>function</b> of the <b>deltoid muscle</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Deltoid Muscle -- Function</b></font size =6></center>", "type" : "V"}
       ],
     
     "label2":[
-      {"question" :"What is the <b>innervation</b> of the <b>deltoid muscle</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Deltoid Muscle -- Innervation</b></font size =6></center>", "type" : "V"}
       ],
 
      "label3":[
-      {"question" :"What is the <b>location</b> of the <b>deltoid muscle</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Deltoid Muscle -- Location</b></font size =6></center>", "type" : "V"}
       ],
 
       "label4":[
-      {"question" :"What is the <b>function</b> of the <b>digital flexor muscles</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Digital Flexor Muscles -- Function</b></font size =6></center>", "type" : "V"}
       ],
 
        "label5":[
-      {"question" :"What is the <b>innervation</b> of the <b>digital flexor muscles</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Digital Flexor Muscles Muscles -- Innervation</b></font size =6></center>", "type" : "V"}
       ],
 
         "label6":[
-      {"question" :"What is the <b>location</b> of the <b>digital flexor muscles?</b>", "type" : "V"}
+      {"question" :"<center><font size =6><b>Digital Flexor Muscles -- Location</b></font size =6></center>", "type" : "V"}
       ],
 
          "label7":[
-      {"question" :"What is the <b>function</b> of the <b>triceps muscle</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Triceps Muscle -- Function</b></font size =6></center>", "type" : "V"}
       ],
 
           "label8":[
-      {"question" :"What is the <b>innervation</b> of the <b>triceps muscle</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Triceps Muscle -- Innervation</b></font size =6></center>", "type" : "V"}
       ],
 
            "label9":[
-      {"question" :"What is the <b>location</b> of the <b>triceps muscle</b>?", "type" : "V"}
+      {"question" :"<center><font size =6><b>Triceps Muscle -- Location</b></font size =6></center>", "type" : "V"}
       ]
 }
