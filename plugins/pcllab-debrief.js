@@ -28,9 +28,9 @@ jsPsych.plugins["pcllab-debrief"] = (function () {
             jsPsych.userInfo = {};
         }
 
-        if (!jsPsych.userInfo.instructions) {
+        if (!jsPsych.userInfo.debrief) {
             $.getJSON(trial.url, function (data) {
-                jsPsych.userInfo.instructions = data;
+                jsPsych.userInfo.debrief = data;
                 show();
             });
         } else {
@@ -39,10 +39,10 @@ jsPsych.plugins["pcllab-debrief"] = (function () {
 
 
         function show() {
-            var instructions = jsPsych.userInfo.instructions[trial.label];
+            var debrief = jsPsych.userInfo.debrief[trial.label];
 
-            if (!$.isArray(instructions)) {
-                instructions = [instructions];
+            if (!$.isArray(debrief)) {
+                debrief = [debrief];
             }
 
             var index = 0;
@@ -50,10 +50,10 @@ jsPsych.plugins["pcllab-debrief"] = (function () {
             showNext();
 
             function showNext() {
-                display_element.html('<h2>' + instructions[index].title + '</h2><br>');
-                display_element.append(instructions[index].text + '<br><br>');
+                display_element.html('<h2>' + debrief[index].title + '</h2><br>');
+                display_element.append(debrief[index].text + '<br><br>');
                 $('#continue_button').click(function () {
-                    if (index != instructions.length) {
+                    if (index != debrief.length) {
                         showNext();
                     } else {
                         display_element.html("");
