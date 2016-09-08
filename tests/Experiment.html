@@ -417,14 +417,6 @@ function saveMySQL(data){
    });
 }
 
-function saveCSV(filename, filedata){
-  $.ajax({
-    type:'post',
-    cache: false,
-        url: 'save_csv.php', // this is the path to the above PHP script
-        data: {filename: filename, filedata: filedata}
-    });
-}
   // Add this to your timeline after the exit survey, but before the debriefing.
 var save_data_block = {
   type: 'call-function',
