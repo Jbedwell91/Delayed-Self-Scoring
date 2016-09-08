@@ -29,6 +29,7 @@
     <script src="../plugins/pcllab-instructions.js"></script>
     <script src="../plugins/pcllab-debrief.js"></script>
     <script src="../plugins/jspsych-survey-multi-choice.js"></script>
+    <script src="../plugins/jspsych-call-function.js"></script>
 
 
     <title>Experiment</title>
@@ -377,6 +378,48 @@
       }
       };
 
+      // This needs to be called somewhere on your timeline before the save_data_block.
+  var save_function = {
+  type: 'call-function',
+  timing_post_trial: 0,
+  func: function saveMySQL(data){
+   var data_table = "Delayed_Self_Scoring"; // change this for different experiments
+   $.ajax({
+      type:'post',
+      cache: false,
+      url: 'savedata.php', // change this to point to your php file.
+      // opt_data is to add additional values to every row, like a subject ID
+      // replace 'key' with the column name, and 'value' with the value.
+      data: {
+          table: data_table,
+          json: JSON.stringify(data),
+          // opt_data: {key: value}
+      },
+      success: function(output) { console.log(output); } // write the result to javascript console
+   });
+}
+// This will save the data to a CSV file in the experiment directory. This only works on your machine if you are running MAMP.
+function saveCSV(filename, filedata){
+  $.ajax({
+    type:'post',
+    cache: false,
+        url: 'save_csv.php', // this is the path to the above PHP script
+        data: {filename: filename, filedata: filedata}
+    });
+}
+
+  // Add this to your timeline after the exit survey, but before the debriefing.
+var save_data_block = {
+  type: 'call-function',
+  timing_post_trial: 0,
+  func: function(){
+    jsPsych.data.addProperties({completed: true}), 
+    // saveCSV("filename.csv", jsPsych.data.dataAsCSV()),
+    saveMySQL(jsPsych.data.getData()) //Need to edit table name in function.
+    // jsPsych.data.displayData();
+  }
+};
+
       function getSubjectData1() {
 
     var trials1 = jsPsych.data.getDataByTrialIndex(13);
@@ -444,13 +487,13 @@
 
        if (condition == '1') {
 
-      timeline.push(demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, instructions4, retrieve1, grade_deltoid1, retrieve2, grade_deltoid2, retrieve3, grade_deltoid3, retrieve4, grade_digital1, retrieve5, grade_digital2, retrieve6, grade_digital3, retrieve7, grade_triceps1, retrieve8, grade_triceps2, retrieve9, grade_triceps3, instructions6, debrief);
+      timeline.push(demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, instructions4, retrieve1, grade_deltoid1, retrieve2, grade_deltoid2, retrieve3, grade_deltoid3, retrieve4, grade_digital1, retrieve5, grade_digital2, retrieve6, grade_digital3, retrieve7, grade_triceps1, retrieve8, grade_triceps2, retrieve9, grade_triceps3, save_function, save_data_block, instructions6, debrief);
 
       //Blocked Condition
 
         } else if (condition == '2') {
 
-        timeline.push(demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, retrieve2, retrieve3, retrieve4, retrieve5, retrieve6, retrieve7, retrieve8, retrieve9, instructions5, grade_deltoid11, grade_deltoid21, grade_deltoid31, grade_digital11, grade_digital21, grade_digital31, grade_triceps11, grade_triceps21, grade_triceps31, instructions6, debrief);
+        timeline.push(demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, retrieve2, retrieve3, retrieve4, retrieve5, retrieve6, retrieve7, retrieve8, retrieve9, instructions5, grade_deltoid11, grade_deltoid21, grade_deltoid31, grade_digital11, grade_digital21, grade_digital31, grade_triceps11, grade_triceps21, grade_triceps31, save_function, save_data_block, instructions6, debrief);
         }
 
     jsPsych.init({
