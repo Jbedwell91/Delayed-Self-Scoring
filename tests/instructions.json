@@ -14,9 +14,29 @@
 
   "Recall" : {
   "title": "<font size =6>Recall Instructions</font size =6>",
-  "text": "<font size = 5>In the next part of the experiment, you will be asked to recall the definitions you previously studied. You will see a prompt on the screen telling you which definition to recall along with a short answer box where you may write your answer. After recalling a defintion, you will be asked to indicate to what degree you think your answer is correct by marking it as 'correct,' 'partially correct,' or 'incorrect.' You will have to spend at least 10 seconds trying to recall the definition. You may spend more than 10 seconds recalling if you would like. We realize that this is a difficult task, but try to recall as much of the definition as you can. When 10 seconds is over, you may advance by pressing the 'Continue' button.</font size = 5>"
+  "text": "<font size = 5>In the next part of the experiment, you will be asked to recall the definitions you previously studied. You will see a prompt on the screen telling you which definition to recall along with a short answer box where you may write your answer. You will have to spend at least 10 seconds trying to recall the definition. You may spend more than 10 seconds recalling if you would like. We realize that this is a difficult task, but try to recall as much of the definition as you can. When 10 seconds is over, you may advance by pressing the 'Continue' button.</font size = 5>"
+
+  },
+
+ "Mixed_Scoring" : {
+   "title": "<font size =6>Scoring Instructions</font size =6>",
+   "text": "<font size = 5>Immediately following each recall attempt, you will be asked to evaluate the correctness of your response. To assist you in this process, you will be presented with the correct answer to the concept you were just tested on, along with your answer. At the bottom of the screen, you will see three radio buttons (“incorrect”, “partially correct”, and “correct”). Indicate how accurate you think your answer was using these buttons. After scoring your response, you may press the “submit” button to advance to the next recall trial.</font size = 5>"
+
+  },
+
+  "Blocked_Scoring" : {
+   "title": "<font size =6>Scoring Instructions</font size =6>",
+   "text": "<font size = 5>Now that you have attempted to recall the definitions to all of the terms, we would like you to evaluate the correctness of your response. To assist you in this process, you will be presented with the correct answer to a concept you were just tested on, along with your answer. At the bottom of the screen, you will see three radio buttons (“incorrect”, “partially correct”, and “correct”). Indicate how accurate you think your answer was using these buttons. After scoring your response, you may press the “submit” button to advance to the next scoring trial.</font size = 5>"
+
+  },
+
+  "Finish" : {
+   "title": "<font size =6>Thank You</font size =6>",
+   "text": "<font size = 5>You have completed the experiment. Thank you for your participation! You may press the 'continue' button at the bottom of the page to access the debriefing form for this experiment. Once you have finished looking over the form, you are free to exit the lab. If you have any additional questions, please direct them to the experimenter.</font size = 5>"
 
   }
+
+
 }
 
 
