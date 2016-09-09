@@ -429,6 +429,13 @@ var save_data_block = {
   }
 };
 
+jsPsych.data.addProperties({
+      subNum: workerId, 
+      cond: condition,   
+      
+    });
+
+
       function getSubjectData1() {
 
     var trials1 = jsPsych.data.getDataByTrialIndex(13);
