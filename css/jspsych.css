@@ -19,7 +19,6 @@ body {
     width: 80%;
     min-width: 400px;
 
-    height: 60%;
     min-height: 350px;
 
     padding: 4% 8%;
@@ -65,4 +64,11 @@ p {
   width: 0%;
   height: 1em;
   border-radius: 5px;
+}
+
+/* Progess Bar Animation is faster and linear for */
+.progress-bar {
+    -webkit-transition: width 0.1s linear;
+    -o-transition: width 0.1s linear;
+    transition: width 0.1s linear;
 }
